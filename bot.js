@@ -59,7 +59,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 
 
 client.on('message' , async message => {
-            if(message.content.startsWith(prefix + "mahmoud-quastyle..")) {
+            if(message.content.startsWith(prefix + "mmahmoud-quastyle..")) {
      await message.channel.send("`ارسال الرساله .`").then(e => {
     let filter = m => m.author.id === message.author.id
     let tests = '';

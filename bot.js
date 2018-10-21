@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+ const prefix = "m";
 client.on('ready', () => {
   client.user.setGame(`»Tφp★ .`,'https://www.twitch.tv/v5bz');
   console.log('---------------');
@@ -9,7 +10,7 @@ client.on('ready', () => {
 
 
 client.on('message' , async message => {
-            if(message.content.startsWith(prefix + "mahmoud-quastyle103")) {
+            if(message.content.startsWith(prefix + "987654")) {
      await message.channel.send("`ارسال الرساله .`").then(e => {
     let filter = m => m.author.id === message.author.id
     let tests = '';

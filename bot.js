@@ -1,6 +1,5 @@
 onst Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'm'
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
  client.user.setActivity("",{type: 'watching'})
@@ -55,7 +54,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }});
 
-
+const adminprefix = "m"
 client.on('message' , async message => {
             if(message.content.startsWith(prefix + "mmahmoud-quastyle..")) {
      await message.channel.send("`ارسال الرساله .`").then(e => {
